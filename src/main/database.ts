@@ -42,25 +42,12 @@ function seedRunes(db: Database.Database): void {
   const insertMany = db.transaction(() => {
     for (const [statTypeStr, baseWeight] of Object.entries(STAT_WEIGHTS)) {
       const statType = statTypeStr as StatType;
-
-      // Exotic stats only get EXOTIC tier runes
-      if ([StatType.AP, StatType.MP, StatType.RANGE, StatType.SUMMONS].includes(statType)) {
-        // Also include standard tiers for normal use
-        for (const tier of [RuneTier.PA, RuneTier.STANDARD, RuneTier.RA]) {
-          const statValue = RUNE_STAT_VALUES[tier];
-          const weight = statValue * baseWeight;
-          const name = buildRuneName(statType, tier);
-          const price = estimatePrice(statType, tier);
-          insert.run(name, statType, tier, statValue, weight, price);
-        }
-      } else {
-        for (const tier of [RuneTier.PA, RuneTier.STANDARD, RuneTier.RA]) {
-          const statValue = RUNE_STAT_VALUES[tier];
-          const weight = statValue * baseWeight;
-          const name = buildRuneName(statType, tier);
-          const price = estimatePrice(statType, tier);
-          insert.run(name, statType, tier, statValue, weight, price);
-        }
+      for (const tier of [RuneTier.PA, RuneTier.STANDARD, RuneTier.RA]) {
+        const statValue = RUNE_STAT_VALUES[tier];
+        const weight = statValue * baseWeight;
+        const name = buildRuneName(statType, tier);
+        const price = estimatePrice(statType, tier);
+        insert.run(name, statType, tier, statValue, weight, price);
       }
     }
   });
