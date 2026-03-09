@@ -85,19 +85,20 @@ export class HistoryRepository {
       'SELECT * FROM forge_attempts WHERE session_id = ? ORDER BY created_at ASC'
     ).all(id) as Array<Record<string, unknown>>;
 
-    const attempts: ForgeAttempt[] = attemptRows.map(a => {
+    const attempts: ForgeAttempt[] = attemptRows.flatMap(a => {
       const rune = this.runeRepo.getById(Number(a['rune_id']));
-      return {
+      if (!rune) return [];
+      return [{
         id: Number(a['id']),
         sessionId: String(a['session_id']),
-        rune: rune!,
+        rune,
         outcome: (Number(a['success']) === 1 ? 'SUCCESS' : 'FAILURE') as ForgeOutcome,
         statChanges: JSON.parse(String(a['stat_changes'] ?? '[]')) as StatChange[],
         sinkBefore: Number(a['sink_before']),
         sinkAfter: Number(a['sink_after']),
         timestamp: new Date(String(a['created_at'])),
-      };
-    }).filter(a => a.rune != null);
+      }];
+    });
 
     return {
       id: String(row['id']),
@@ -113,6 +114,3 @@ export class HistoryRepository {
     };
   }
 }
-
-// Re-export StatType to satisfy the import in HistoryRepository
-export { StatType };
