@@ -2,6 +2,59 @@
 
 Application de bureau complète et standalone d'assistance à la forgemagie Dofus 3.5. Conseiller stratégique avancé et moteur d'IA décisionnelle pour le choix des runes, l'optimisation du sink, la planification de remontage de jets et l'aide à la décision pour les tentatives d'exotisme.
 
+---
+
+## 🚀 Comment exécuter le programme ?
+
+### Option A — Installer et lancer le `.exe` (utilisateurs Windows)
+
+1. Téléchargez le fichier **`FMKamas Setup 1.0.0.exe`** depuis la section [Releases](../../releases) du dépôt.
+2. Double-cliquez sur l'installateur et suivez les étapes.
+3. Lancez **FMKamas** depuis le raccourci créé sur le Bureau ou dans le menu Démarrer.
+
+> Si vous préférez la version **portable** (sans installation), téléchargez `FMKamas 1.0.0.exe` et lancez-le directement.
+
+---
+
+### Option B — Lancer depuis les sources (développeurs)
+
+> **Prérequis :** Node.js 20+ et npm 9+
+
+```bash
+# 1. Installer les dépendances
+npm install
+
+# 2. Lancer en mode développement (fenêtre Electron + rechargement à chaud)
+npm run dev
+```
+
+L'application s'ouvre automatiquement dans une fenêtre Electron.
+
+---
+
+### Option C — Créer le `.exe` soi-même (Windows)
+
+> **Prérequis supplémentaires :** Python 3.x et Visual Studio Build Tools (composant « Desktop development with C++ »)
+
+```bash
+# 1. Installer les dépendances
+npm install
+
+# 2. Compiler le code source
+npm run build
+
+# 3. Packager en installateur Windows
+npm run package:win
+```
+
+Les fichiers produits se trouvent dans le dossier **`dist/`** :
+| Fichier | Description |
+|---|---|
+| `FMKamas Setup 1.0.0.exe` | Installateur NSIS (recommandé) |
+| `FMKamas 1.0.0.exe` | Version portable (sans installation) |
+
+---
+
 ## Screenshots
 
 ```
