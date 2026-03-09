@@ -1,0 +1,30 @@
+appId: com.fmkamas.app
+productName: FMKamas
+copyright: Copyright © 2026 FMKamas
+directories:
+  output: dist
+  buildResources: build
+files:
+  - "dist-main/**/*"
+  - "dist-renderer/**/*"
+  - "data/**/*"
+win:
+  target:
+    - target: nsis
+      arch: [x64]
+    - target: portable
+      arch: [x64]
+  icon: build/icon.ico
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+mac:
+  target:
+    - target: dmg
+      arch: [x64, arm64]
+  icon: build/icon.icns
+linux:
+  target:
+    - target: AppImage
+      arch: [x64]
+  icon: build/icon.png
