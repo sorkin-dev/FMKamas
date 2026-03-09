@@ -1,0 +1,241 @@
+[
+  {
+    "id": 1,
+    "name": "Gelano",
+    "level": 60,
+    "type": "Anneau",
+    "stats": [
+      { "type": "VITALITY", "min": 31, "max": 50 },
+      { "type": "WISDOM", "min": 6, "max": 10 },
+      { "type": "STRENGTH", "min": 16, "max": 25 },
+      { "type": "INTELLIGENCE", "min": 16, "max": 25 },
+      { "type": "CHANCE", "min": 16, "max": 25 },
+      { "type": "AGILITY", "min": 16, "max": 25 }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Alliance d'Elya Wood",
+    "level": 100,
+    "type": "Anneau",
+    "stats": [
+      { "type": "VITALITY", "min": 60, "max": 100 },
+      { "type": "WISDOM", "min": 6, "max": 10 },
+      { "type": "STRENGTH", "min": 30, "max": 50 },
+      { "type": "INTELLIGENCE", "min": 30, "max": 50 },
+      { "type": "HEALS", "min": 3, "max": 5 }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Coiffe du Bouftou Royal",
+    "level": 23,
+    "type": "Chapeau",
+    "stats": [
+      { "type": "VITALITY", "min": 15, "max": 25 },
+      { "type": "STRENGTH", "min": 11, "max": 20 },
+      { "type": "EARTH_RESISTANCE_PERCENT", "min": 3, "max": 5 }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Cape du Piou Bleu",
+    "level": 18,
+    "type": "Cape",
+    "stats": [
+      { "type": "VITALITY", "min": 10, "max": 20 },
+      { "type": "AGILITY", "min": 6, "max": 10 },
+      { "type": "AIR_RESISTANCE_PERCENT", "min": 3, "max": 5 }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Anneau du Minotot",
+    "level": 35,
+    "type": "Anneau",
+    "stats": [
+      { "type": "VITALITY", "min": 25, "max": 40 },
+      { "type": "STRENGTH", "min": 11, "max": 20 },
+      { "type": "EARTH_DAMAGE", "min": 3, "max": 5 }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Bottes de Kluh",
+    "level": 65,
+    "type": "Bottes",
+    "stats": [
+      { "type": "VITALITY", "min": 40, "max": 60 },
+      { "type": "STRENGTH", "min": 25, "max": 40 },
+      { "type": "DODGE", "min": 10, "max": 20 }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Ceinture du Rat Blanc",
+    "level": 45,
+    "type": "Ceinture",
+    "stats": [
+      { "type": "VITALITY", "min": 30, "max": 50 },
+      { "type": "WISDOM", "min": 4, "max": 7 },
+      { "type": "CHANCE", "min": 11, "max": 20 }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Amulette du Bouftou",
+    "level": 13,
+    "type": "Amulette",
+    "stats": [
+      { "type": "VITALITY", "min": 6, "max": 10 },
+      { "type": "STRENGTH", "min": 3, "max": 5 },
+      { "type": "EARTH_RESISTANCE_PERCENT", "min": 1, "max": 2 }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Baguette Rhon",
+    "level": 55,
+    "type": "Baguette",
+    "stats": [
+      { "type": "VITALITY", "min": 30, "max": 50 },
+      { "type": "INTELLIGENCE", "min": 20, "max": 35 },
+      { "type": "FIRE_DAMAGE", "min": 5, "max": 8 },
+      { "type": "HEALS", "min": 3, "max": 5 }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Arc Guisnel",
+    "level": 70,
+    "type": "Arc",
+    "stats": [
+      { "type": "VITALITY", "min": 40, "max": 60 },
+      { "type": "AGILITY", "min": 25, "max": 40 },
+      { "type": "AIR_DAMAGE", "min": 5, "max": 8 }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Marteau de Forgeron",
+    "level": 80,
+    "type": "Marteau",
+    "stats": [
+      { "type": "VITALITY", "min": 55, "max": 80 },
+      { "type": "STRENGTH", "min": 35, "max": 55 },
+      { "type": "EARTH_DAMAGE", "min": 8, "max": 12 },
+      { "type": "CRITICAL_HITS", "min": 3, "max": 5 }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Cape Siniswolf",
+    "level": 90,
+    "type": "Cape",
+    "stats": [
+      { "type": "VITALITY", "min": 55, "max": 80 },
+      { "type": "AGILITY", "min": 30, "max": 50 },
+      { "type": "AIR_RESISTANCE_PERCENT", "min": 5, "max": 8 },
+      { "type": "DODGE", "min": 8, "max": 12 }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Chapeau d'Eau Fansen",
+    "level": 75,
+    "type": "Chapeau",
+    "stats": [
+      { "type": "VITALITY", "min": 45, "max": 70 },
+      { "type": "CHANCE", "min": 25, "max": 40 },
+      { "type": "WATER_RESISTANCE_PERCENT", "min": 5, "max": 8 },
+      { "type": "HEALS", "min": 4, "max": 7 }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Ceinture Mulante",
+    "level": 110,
+    "type": "Ceinture",
+    "stats": [
+      { "type": "VITALITY", "min": 60, "max": 90 },
+      { "type": "STRENGTH", "min": 35, "max": 55 },
+      { "type": "INTELLIGENCE", "min": 35, "max": 55 },
+      { "type": "CHANCE", "min": 35, "max": 55 },
+      { "type": "AGILITY", "min": 35, "max": 55 }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Dagues Rhymes",
+    "level": 100,
+    "type": "Dagues",
+    "stats": [
+      { "type": "VITALITY", "min": 55, "max": 80 },
+      { "type": "AGILITY", "min": 30, "max": 50 },
+      { "type": "CRITICAL_HITS", "min": 5, "max": 8 },
+      { "type": "AIR_DAMAGE", "min": 8, "max": 12 }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Anneau Sournois",
+    "level": 120,
+    "type": "Anneau",
+    "stats": [
+      { "type": "VITALITY", "min": 70, "max": 100 },
+      { "type": "WISDOM", "min": 10, "max": 15 },
+      { "type": "INTELLIGENCE", "min": 40, "max": 65 },
+      { "type": "FIRE_RESISTANCE_PERCENT", "min": 5, "max": 8 }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Cape de Bserk",
+    "level": 130,
+    "type": "Cape",
+    "stats": [
+      { "type": "VITALITY", "min": 80, "max": 115 },
+      { "type": "STRENGTH", "min": 45, "max": 70 },
+      { "type": "EARTH_RESISTANCE_PERCENT", "min": 6, "max": 10 },
+      { "type": "CRITICAL_HITS", "min": 4, "max": 7 }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Chapeau du Corbac",
+    "level": 140,
+    "type": "Chapeau",
+    "stats": [
+      { "type": "VITALITY", "min": 90, "max": 130 },
+      { "type": "WISDOM", "min": 12, "max": 18 },
+      { "type": "INTELLIGENCE", "min": 50, "max": 75 },
+      { "type": "FIRE_DAMAGE", "min": 10, "max": 15 }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Bottes Tofumanchou",
+    "level": 150,
+    "type": "Bottes",
+    "stats": [
+      { "type": "VITALITY", "min": 100, "max": 145 },
+      { "type": "AGILITY", "min": 55, "max": 80 },
+      { "type": "AIR_DAMAGE", "min": 12, "max": 18 },
+      { "type": "DODGE", "min": 15, "max": 25 }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Amulette du Wabbinimal",
+    "level": 160,
+    "type": "Amulette",
+    "stats": [
+      { "type": "VITALITY", "min": 110, "max": 160 },
+      { "type": "STRENGTH", "min": 60, "max": 90 },
+      { "type": "INTELLIGENCE", "min": 60, "max": 90 },
+      { "type": "CHANCE", "min": 60, "max": 90 },
+      { "type": "AGILITY", "min": 60, "max": 90 },
+      { "type": "WISDOM", "min": 15, "max": 22 }
+    ]
+  }
+]

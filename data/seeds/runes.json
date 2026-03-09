@@ -1,0 +1,9 @@
+{
+  "description": "Rune definitions for FMKamas. Generated programmatically at startup from domain constants.",
+  "note": "Runes are seeded into SQLite at first startup from domain/constants. This file is for reference.",
+  "tiers": {
+    "PA": 1,
+    "STANDARD": 3,
+    "RA": 10
+  }
+}
