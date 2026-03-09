@@ -8,6 +8,7 @@ files:
   - "dist-main/**/*"
   - "dist-renderer/**/*"
   - "data/**/*"
+  - "node_modules/**/*"
 win:
   target:
     - target: nsis
@@ -22,9 +23,7 @@ mac:
   target:
     - target: dmg
       arch: [x64, arm64]
-  icon: build/icon.icns
 linux:
   target:
     - target: AppImage
       arch: [x64]
-  icon: build/icon.png

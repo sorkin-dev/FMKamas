@@ -74,9 +74,31 @@ npm run build
 
 ## Packaging Windows (.exe)
 
+### Prérequis Windows
+- Node.js 20+ (avec npm)
+- Python 3.x (requis par `node-gyp` pour compiler `better-sqlite3`)
+- Visual Studio Build Tools (ou Visual Studio Community) avec le composant « Développement Desktop en C++ »
+
+### Commandes
+
 ```bash
+# 1. Installer les dépendances (reconstruit better-sqlite3 pour Electron)
+npm install
+
+# 2. Construire l'application
+npm run build
+
+# 3. Packager en .exe
 npm run package:win
 ```
+
+Le fichier `.exe` sera créé dans **`dist/`** :
+- `dist/FMKamas Setup 1.0.0.exe` — installateur NSIS (recommandé)
+- `dist/FMKamas 1.0.0.exe` — portable (sans installation)
+
+### Notes
+- Le packaging doit être exécuté sur **Windows** pour produire un `.exe` natif.
+- Sur Linux/macOS, vous pouvez compiler pour Windows avec Wine : `electron-builder --win --x64`
 
 ## Tests
 
